@@ -1,73 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | Madhan Website</title>
-
-  <!-- Your existing CSS (if any) -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-
-  <style>
-    /* Optional basic styling for gallery */
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      justify-items: center;
-    }
-    .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
-  </style>
-</head>
-
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery — Nandam Madhan</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-  <h1>My Photo Gallery</h1>
 
-  <div class="gallery">
-    <!-- Example images — replace these paths with your own -->
-    <a href="images/photo1.jpg" data-lightbox="gallery" data-title="Photo 1">
-      <img src="images/photo1.jpg" alt="Photo 1">
-    </a>
+<header class="container">
+  <nav>
+    <div class="logo">Madhan Nandam</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
 
-    <a href="images/photo2.jpg" data-lightbox="gallery" data-title="Photo 2">
-      <img src="images/photo2.jpg" alt="Photo 2">
-    </a>
-
-    <a href="images/photo3.jpg" data-lightbox="gallery" data-title="Photo 3">
-      <img src="images/photo3.jpg" alt="Photo 3">
-    </a>
-
-    <a href="images/photo4.jpg" data-lightbox="gallery" data-title="Photo 4">
-      <img src="images/photo4.jpg" alt="Photo 4">
-    </a>
-
-    <!-- Add more images below as needed -->
-  </div>
-
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<main class="container">
+  <section class="card">
+    <h2 class="section-title">Gallery & Hobbies</h2>
+    <p style="color:var(--muted)">I enjoy travelling with friends and family. Here are a few photos.</p>
+    <div class="gallery-grid">
+      <img src="photo.jpg" alt="photo">
+      <img src="photo.jpg" alt="photo">
+      <img src="photo.jpg" alt="photo">
+      <img src="photo.jpg" alt="photo">
+    </div>
+  </section>
+</main>
 </body>
 </html>
